@@ -1,0 +1,4 @@
+bases:
+  - https://github.com/UrkoLekuona/kustomize-test/base
+patches:
+  - replicacount-patch.yaml
