@@ -32,7 +32,8 @@ Desde aquí, lo que hay que hacer es crear una nueva aplicación en la interfaz 
 
 Una vez creada la aplicación, la tarea consiste en esperar a que se apliquen los recursos en el cluster, y realizar commits en el repositorio que contiene los parches (un `fork` de este) y en el repositorio que contiene las bases (un `fork` de [este](https://github.com/UrkoLekuona/kustomize-test)).
 
-Como podremos comprobar, Argo solo detecta un cambio en la aplicación cuando ocurre un nuevo commit en el repositorio que está monitorizando directamente, el repositorio de los parches.
+Como podremos comprobar, Argo solo detecta un cambio en la aplicación cuando ocurre un nuevo commit en el repositorio que está monitorizando directamente, el repositorio de los parches. Para que se desplieguen los cambios que se han hecho en el repositorio de las bases, será necesario realizar algún commit en el repositorio de las bases o realizar un `hard refresh` en Argo, que forzará a que se vuelva a clonar el repositorio entero.
+
 ### Flux
 
 TODO
